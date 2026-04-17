@@ -66,12 +66,14 @@ export default function Brands() {
       </p>
 
       <div className="brands-scroll" aria-label="Brands we use" role="list">
-        {[...BRANDS, ...BRANDS].map((b, i) => (
-          <div className="brand-pill" key={`${b.name}-${i}`} role="listitem">
-            <span className="brand-name">{b.name}</span>
-            <span className="brand-cat">{b.category}</span>
-          </div>
-        ))}
+        <div className="brands-track">
+          {[...BRANDS, ...BRANDS].map((b, i) => (
+            <div className="brand-pill" key={`${b.name}-${i}`} role="listitem">
+              <span className="brand-name">{b.name}</span>
+              <span className="brand-cat">{b.category}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="materials-grid" role="list" aria-label="Materials we use">

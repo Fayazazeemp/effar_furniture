@@ -4,31 +4,27 @@
 
 /* ── Scrolling brand strip ── */
 .brands-scroll {
-  display: flex;
-  gap: 0.75rem;
   overflow: hidden;
   margin-bottom: 4rem;
   mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
-/* The pills are duplicated in JSX; we animate the entire row */
-.brands-scroll {
+/* Inner track — this is what actually moves */
+.brands-track {
+  display: flex;
+  gap: 0.75rem;
+  width: max-content;        /* expands to fit all pills naturally */
   animation: marquee 16s linear infinite;
 }
 
-.brands-scroll:hover {
+.brands-scroll:hover .brands-track {
   animation-play-state: paused;
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .brand-pill {
