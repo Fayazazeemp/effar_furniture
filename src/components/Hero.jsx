@@ -34,7 +34,7 @@ export default function Hero() {
 
       <div className="hero-right">
         <div className="hero-wood-pattern" />
-        <div className="big-letter" aria-hidden="true">E</div>
+        <div className="big-letter" aria-hidden="true">EFFAR</div>
         <div className="hero-visual">
           <p className="hero-tagline">"Where every piece<br />tells a story"</p>
           <div className="hero-icons">
