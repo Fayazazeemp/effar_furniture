@@ -14,7 +14,7 @@
 
 /* The pills are duplicated in JSX; we animate the entire row */
 .brands-scroll {
-  animation: marquee 18s linear infinite;
+  animation: marquee 16s linear infinite;
 }
 
 .brands-scroll:hover {
