@@ -14,8 +14,9 @@
 .brands-track {
   display: flex;
   gap: 0.75rem;
-  width: max-content;        /* expands to fit all pills naturally */
-  animation: marquee 16s linear infinite;
+  width: max-content;
+  /* expands to fit all pills naturally */
+  animation: marquee 20s linear infinite;
 }
 
 .brands-scroll:hover .brands-track {
@@ -23,8 +24,13 @@
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .brand-pill {
