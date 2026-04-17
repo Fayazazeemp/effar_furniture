@@ -1,0 +1,25 @@
+footer {
+  background: var(--charcoal);
+  padding: 2rem 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer .f-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--warm-tan);
+  letter-spacing: 0.08em;
+}
+footer p {
+  font-size: 0.75rem;
+  color: rgba(200,169,126,0.4);
+  letter-spacing: 0.05em;
+}
+footer a {
+  color: rgba(200,169,126,0.6);
+  text-decoration: none;
+}
+footer a:hover { color: var(--warm-tan); }

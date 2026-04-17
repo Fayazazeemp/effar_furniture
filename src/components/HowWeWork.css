@@ -1,0 +1,93 @@
+#process { background: var(--cream); }
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* horizontal connector line across all steps */
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 52px; /* centres on number circles */
+  left: calc(12.5% + 24px); /* start from centre of first circle */
+  right: calc(12.5% + 24px);
+  height: 1px;
+  background: linear-gradient(to right, var(--warm-tan), rgba(200,169,126,0.3));
+  z-index: 0;
+}
+
+.process-step {
+  position: relative;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.step-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: rgba(200,169,126,0.25);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  /* circle behind the number */
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(200,169,126,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  color: var(--walnut-mid);
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  transition: background 0.3s, border-color 0.3s;
+}
+.process-step:hover .step-number {
+  background: var(--walnut);
+  border-color: var(--walnut);
+  color: var(--warm-tan);
+}
+
+.step-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--warm-tan);
+  margin-top: 0.25rem;
+}
+.step-icon svg { width: 100%; height: 100%; }
+
+.step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--walnut);
+  line-height: 1.3;
+}
+
+.step-body {
+  font-size: 0.87rem;
+  font-weight: 300;
+  color: #6b4a30;
+  line-height: 1.75;
+}
+
+@media (max-width: 1000px) {
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 2rem;
+  }
+  .process-steps::before { display: none; }
+}
+@media (max-width: 600px) {
+  .process-steps { grid-template-columns: 1fr; gap: 2.5rem; }
+  .process-step { padding: 0; }
+}

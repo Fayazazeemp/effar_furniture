@@ -1,0 +1,132 @@
+#contact {
+  background: var(--walnut);
+  color: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+/* #contact::before {
+  content: 'EFFAR';
+  position: absolute;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20vw;
+  font-weight: 300;
+  color: rgba(200,169,126,0.05);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+} */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info .section-label {
+  color: rgba(200, 169, 126, 0.6);
+}
+
+.contact-info .section-label::before {
+  background: rgba(200, 169, 126, 0.4);
+}
+
+.contact-info .section-title {
+  color: var(--cream);
+}
+
+.contact-info .section-desc {
+  color: rgba(200, 169, 126, 0.8);
+}
+
+.contact-details {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(200, 169, 126, 0.15);
+  font-size: 0.95rem;
+  color: var(--cream);
+}
+
+.contact-details li svg {
+  width: 18px;
+  height: 18px;
+  color: var(--warm-tan);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-details a {
+  color: var(--cream);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-details a:hover {
+  color: var(--warm-tan);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(200, 169, 126, 0.3);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.social-link:hover {
+  background: rgba(200, 169, 126, 0.1);
+  border-color: var(--warm-tan);
+}
+
+.social-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Map */
+.map-container {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(200, 169, 126, 0.2);
+  height: 100%;
+  min-height: 380px;
+}
+
+.map-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: none;
+  filter: sepia(30%) contrast(1.1);
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

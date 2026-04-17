@@ -1,0 +1,100 @@
+#wholesale {
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
+}
+
+.wholesale-inner { position: relative; z-index: 2; }
+
+.wholesale-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--warm-tan);
+  border: 1px solid rgba(200,169,126,0.3);
+  border-radius: 2px;
+  padding: 0.3rem 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.wholesale-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.wholesale-desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(245,237,224,0.6);
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+.wholesale-desc strong {
+  color: var(--warm-tan);
+  font-weight: 500;
+}
+
+.wholesale-perks {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem 2rem;
+  margin-bottom: 2.5rem;
+  max-width: 540px;
+}
+.wholesale-perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.87rem;
+  font-weight: 300;
+  color: rgba(245,237,224,0.75);
+}
+.wholesale-perks svg {
+  width: 16px;
+  height: 16px;
+  color: var(--warm-tan);
+  flex-shrink: 0;
+}
+
+.wholesale-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.wholesale-call {
+  color: var(--cream) !important;
+  border-color: rgba(200,169,126,0.35) !important;
+}
+.wholesale-call:hover {
+  background: rgba(200,169,126,0.1) !important;
+}
+
+/* Decorative SVG */
+.wholesale-deco {
+  width: 280px;
+  height: 280px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+.wholesale-deco svg { width: 100%; height: 100%; }
+
+@media (max-width: 1000px) {
+  #wholesale { grid-template-columns: 1fr; }
+  .wholesale-deco { display: none; }
+}
+@media (max-width: 600px) {
+  .wholesale-perks { grid-template-columns: 1fr; }
+}
