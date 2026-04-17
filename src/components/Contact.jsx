@@ -4,7 +4,7 @@ const WA_LINK =
   'https://wa.me/919497717371?text=Hello%20Effar%20Furniture!%20I%27d%20like%20to%20enquire%20about%20your%20products.';
 
 const MAP_SRC =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.123456789!2d76.6500!3d10.7750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86d9a4d8e7b0d%3A0x1c2e3f4a5b6c7d8e!2sBOC%20Road%2C%20Palakkad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1234567890';
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4198802015594!2d76.64714787518344!3d10.779118359143787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86df67102998d%3A0x3a39abfb3bfaeb4f!2sEffar%20Trading!5e0!3m2!1sen!2sin!4v1776451826997!5m2!1sen!2sin';
 
 const WaIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

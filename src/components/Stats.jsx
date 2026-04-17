@@ -1,9 +1,9 @@
 import './Stats.css';
 
 const STATS = [
-  { num: '15+', label: 'Years Experience' },
-  { num: '500+', label: 'Products in Stock' },
-  { num: '1000+', label: 'Happy Customers' },
+  { num: '20+', label: 'Years Experience' },
+  { num: '5000+', label: 'Products in Stock' },
+  { num: '10000+', label: 'Happy Customers' },
   { num: '100%', label: 'Quality Assured' },
 ];
 
