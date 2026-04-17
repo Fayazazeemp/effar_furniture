@@ -66,7 +66,7 @@ export default function ServiceArea() {
             <iframe
               id="google-map-effar"
               title="Effar Furniture location on BOC Road, Palakkad"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.1!2d76.648!3d10.775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b4ed9a9b6b5%3A0x0!2sBOC%20Road%2C%20Palakkad%2C%20Kerala%20678001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.461282241096!2d76.64733587518337!3d10.775938859202405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba86df67102998d%3A0x3a39abfb3bfaeb4f!2sEffar%20Trading!5e0!3m2!1sen!2sin!4v1776452017499!5m2!1sen!2sin"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
