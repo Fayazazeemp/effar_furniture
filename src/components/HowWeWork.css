@@ -83,11 +83,18 @@
 @media (max-width: 1000px) {
   .process-steps {
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem 2rem;
+    gap: 3rem 2rem;
   }
   .process-steps::before { display: none; }
 }
 @media (max-width: 600px) {
-  .process-steps { grid-template-columns: 1fr; gap: 2.5rem; }
-  .process-step { padding: 0; }
+  .process-steps { 
+    grid-template-columns: 1fr; 
+    gap: 3rem; 
+  }
+  .process-step { 
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
 }
